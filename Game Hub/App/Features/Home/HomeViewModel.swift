@@ -32,7 +32,7 @@ class HomeViewModel: ObservableObject {
                 }
             } receiveValue: { value in
                 if value.isEmpty {
-                    
+                    self.games = .empty
                 } else {
                     self.games = .success(data: value)
                 }

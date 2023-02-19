@@ -24,6 +24,7 @@
 		44FF5FA729A2331C001920A1 /* DetailGameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF5FA629A2331B001920A1 /* DetailGameResponse.swift */; };
 		44FF5FAD29A2376B001920A1 /* DetailGamePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF5FAC29A2376B001920A1 /* DetailGamePageView.swift */; };
 		44FF5FAF29A2378C001920A1 /* DetailGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF5FAE29A2378C001920A1 /* DetailGameViewModel.swift */; };
+		44FF5FB329A260B8001920A1 /* TextHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF5FB229A260B8001920A1 /* TextHtml.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		44FF5FA629A2331B001920A1 /* DetailGameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameResponse.swift; sourceTree = "<group>"; };
 		44FF5FAC29A2376B001920A1 /* DetailGamePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGamePageView.swift; sourceTree = "<group>"; };
 		44FF5FAE29A2378C001920A1 /* DetailGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewModel.swift; sourceTree = "<group>"; };
+		44FF5FB229A260B8001920A1 /* TextHtml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHtml.swift; sourceTree = "<group>"; };
 		90D2AF2C1B7DC35FD7E3EBF8 /* Pods-Game Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game Hub.release.xcconfig"; path = "Target Support Files/Pods-Game Hub/Pods-Game Hub.release.xcconfig"; sourceTree = "<group>"; };
 		9E0E6CA66B5D979B4A34CED9 /* Pods-Game Hub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game Hub.debug.xcconfig"; path = "Target Support Files/Pods-Game Hub/Pods-Game Hub.debug.xcconfig"; sourceTree = "<group>"; };
 		ED007D9B9C731858A9096DD8 /* Pods_Game_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game_Hub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +220,7 @@
 			children = (
 				448F32B1299DC046009F4BAC /* CustomError.swift */,
 				448F32B6299DC2FE009F4BAC /* ViewState.swift */,
+				44FF5FB229A260B8001920A1 /* TextHtml.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				448F32AC299DB8B9009F4BAC /* GamesResponse.swift in Sources */,
 				44FF5FA229A05654001920A1 /* HomePageView.swift in Sources */,
 				44FF5FAD29A2376B001920A1 /* DetailGamePageView.swift in Sources */,
+				44FF5FB329A260B8001920A1 /* TextHtml.swift in Sources */,
 				44FF5FA729A2331C001920A1 /* DetailGameResponse.swift in Sources */,
 				44808B072999B6B900421726 /* Game_HubApp.swift in Sources */,
 				44FF5FA529A05E5D001920A1 /* GameItemView.swift in Sources */,

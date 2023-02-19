@@ -43,7 +43,7 @@ extension GameRepository: GameRepositoryProtocol {
     
     func detailGame(idGame: Int) -> AnyPublisher<DetailGameResponse, Error> {
         return Future<DetailGameResponse, Error> { completion in
-            if let url = URL(string: "https://api.rawg.io/api/games/3498?key=c4764cb2996a41469198de3bb933f097") {
+            if let url = URL(string: "https://api.rawg.io/api/games/\(idGame)?key=c4764cb2996a41469198de3bb933f097") {
                 AF.request(url, method: .get)
                     .validate()
                     .responseDecodable(of: DetailGameResponse.self) { response in
