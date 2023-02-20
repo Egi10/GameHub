@@ -50,7 +50,7 @@ struct HomePageView: View {
             }
             .toolbar {
                 NavigationLink(destination: {
-                    // Navigation To Profile
+                    ProfilePageView()
                 }, label: {
                     Image(systemName: "person")
                 })

@@ -25,6 +25,7 @@
 		44FF5FAD29A2376B001920A1 /* DetailGamePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF5FAC29A2376B001920A1 /* DetailGamePageView.swift */; };
 		44FF5FAF29A2378C001920A1 /* DetailGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF5FAE29A2378C001920A1 /* DetailGameViewModel.swift */; };
 		44FF5FB329A260B8001920A1 /* TextHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF5FB229A260B8001920A1 /* TextHtml.swift */; };
+		44FF5FB629A2ED06001920A1 /* ProfilePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FF5FB529A2ED06001920A1 /* ProfilePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		44FF5FAC29A2376B001920A1 /* DetailGamePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGamePageView.swift; sourceTree = "<group>"; };
 		44FF5FAE29A2378C001920A1 /* DetailGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewModel.swift; sourceTree = "<group>"; };
 		44FF5FB229A260B8001920A1 /* TextHtml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextHtml.swift; sourceTree = "<group>"; };
+		44FF5FB529A2ED06001920A1 /* ProfilePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageView.swift; sourceTree = "<group>"; };
 		90D2AF2C1B7DC35FD7E3EBF8 /* Pods-Game Hub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game Hub.release.xcconfig"; path = "Target Support Files/Pods-Game Hub/Pods-Game Hub.release.xcconfig"; sourceTree = "<group>"; };
 		9E0E6CA66B5D979B4A34CED9 /* Pods-Game Hub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Game Hub.debug.xcconfig"; path = "Target Support Files/Pods-Game Hub/Pods-Game Hub.debug.xcconfig"; sourceTree = "<group>"; };
 		ED007D9B9C731858A9096DD8 /* Pods_Game_Hub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Game_Hub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 		448F32A6299DB4FE009F4BAC /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				44FF5FB429A2ECF0001920A1 /* Profile */,
 				44FF5FA829A23721001920A1 /* Detail */,
 				448F32B3299DC0D7009F4BAC /* Home */,
 			);
@@ -250,6 +253,14 @@
 				44FF5FAE29A2378C001920A1 /* DetailGameViewModel.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		44FF5FB429A2ECF0001920A1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				44FF5FB529A2ED06001920A1 /* ProfilePageView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		7DBC0F53B569AC41BD9F9189 /* Pods */ = {
@@ -453,6 +464,7 @@
 				44FF5FB329A260B8001920A1 /* TextHtml.swift in Sources */,
 				44FF5FA729A2331C001920A1 /* DetailGameResponse.swift in Sources */,
 				44808B072999B6B900421726 /* Game_HubApp.swift in Sources */,
+				44FF5FB629A2ED06001920A1 /* ProfilePageView.swift in Sources */,
 				44FF5FA529A05E5D001920A1 /* GameItemView.swift in Sources */,
 				44FF5FAF29A2378C001920A1 /* DetailGameViewModel.swift in Sources */,
 			);
