@@ -39,7 +39,6 @@ struct ProfilePageView: View {
             }
             .padding(.top, 40.0)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .top)
-            .navigationTitle("Profile")
         }
     }
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct GameHubApp: App {
     var body: some Scene {
         WindowGroup {
-            HomePageView()
+            DashboardPageView()
         }
     }
 }

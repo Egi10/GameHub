@@ -9,7 +9,22 @@ import SwiftUI
 
 struct DashboardPageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            HomePageView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            FavoritePageIView()
+                .tabItem {
+                    Label("Favorite", systemImage: "heart")
+                }
+            
+            ProfilePageView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                }
+        }
     }
 }
 

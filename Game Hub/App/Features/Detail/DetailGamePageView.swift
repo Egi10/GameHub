@@ -12,6 +12,9 @@ import WebKit
 struct DetailGamePageView: View {
     @ObservedObject var viewModel = DetailGameViewModel()
     
+    @State private var showNavigationBar = true
+    @State var favorite = false
+    
     var idGame: Int
     var name: String
     
@@ -61,7 +64,10 @@ struct DetailGamePageView: View {
                             .foregroundColor(.black)
                             .padding(.top, 8)
                         
-                        Text(html: data.description)
+                        Text(data.descriptionRaw)
+                            .font(.subheadline)
+                            .fontWeight(.light)
+                            .foregroundColor(.gray)
                             .padding(.top, 1)
                         
                         Text("Genre")
@@ -89,12 +95,46 @@ struct DetailGamePageView: View {
             .onAppear {
                 self.viewModel.getDetailGame(idGame: idGame)
             }
+            .toolbar(showNavigationBar ? .visible : .hidden)
+            .toolbar {
+                if !favorite {
+                    favoriteButton
+                } else {
+                    unfavoriteButton
+                }
+            }
             .padding(.horizontal, 18)
             .padding(.top, 10.0)
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
             .navigationBarTitle(name)
             .navigationBarTitleDisplayMode(.inline)
         }
+    }
+    
+    var favoriteButton: some View {
+            Button(action: {
+                //TODO Save
+                favorite = true
+            }, label: {
+                Image(systemName: "heart.fill")
+                    .resizable()
+                    .frame(width: 20, height: 20)
+                    .foregroundColor(.gray)
+                    .padding(.trailing)
+            })
+        }
+    
+    var unfavoriteButton: some View {
+        Button(action: {
+            //TODO remote
+            favorite = false
+        }, label: {
+            Image(systemName: "heart.fill")
+                .resizable()
+                .frame(width: 20, height: 20)
+                .foregroundColor(.red)
+                .padding(.trailing)
+        })
     }
 }
 

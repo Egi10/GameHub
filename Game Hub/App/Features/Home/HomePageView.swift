@@ -30,6 +30,7 @@ struct HomePageView: View {
                             ForEach(data, id: \.self) { game in
                                 NavigationLink {
                                     DetailGamePageView(idGame: game.id ?? 0, name: game.name ?? "")
+                                        .toolbar(.hidden, for: .tabBar)
                                 } label: {
                                     GameItem(
                                         image: game.image ?? "",
@@ -47,13 +48,6 @@ struct HomePageView: View {
                 } else if case .error(let error) = viewModel.games {
                     Text(error.localizedDescription)
                 }
-            }
-            .toolbar {
-                NavigationLink(destination: {
-                    ProfilePageView()
-                }, label: {
-                    Image(systemName: "person")
-                })
             }
         }
     }
