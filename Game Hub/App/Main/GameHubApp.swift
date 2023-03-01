@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Game_HubApp: App {
+struct GameHubApp: App {
     var body: some Scene {
         WindowGroup {
             HomePageView()
